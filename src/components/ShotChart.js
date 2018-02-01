@@ -12,6 +12,7 @@ export class ShotChart extends React.Component {
         playerId: PropTypes.number,
         minCount: PropTypes.number,
         chartType: PropTypes.string,
+        displayToolTips: PropTypes.bool.isRequired,
     }
 
     componentDidUpdate() {
