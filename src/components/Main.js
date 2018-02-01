@@ -5,7 +5,7 @@ import { DataViewContainer } from './DataViewContainer';
 
 export class Main extends React.Component {
     state = {
-        playerId: nba.findPlayer('James Harden').playerId,
+        playerId: nba.findPlayer('Joel Embiid').playerId,
         playerInfo: {},
     }
 
