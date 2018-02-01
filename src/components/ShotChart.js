@@ -9,10 +9,10 @@ window.d3_hexbin = {hexbin : hexbin}; // workaround library problem
 
 export class ShotChart extends React.Component {
     static propTypes = {
-        playerId: PropTypes.number.isRequired,
+        playerId: PropTypes.number,
     }
 
-    componentDidMount() {
+    componentDidUpdate() {
         nba.stats.shots({
             PlayerID: this.props.playerId
         }).then((response) => {
